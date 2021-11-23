@@ -9,8 +9,9 @@ import {
 } from './pages'
 import{
   Navbar,
-  Footer,
-  Sidebar
+  Sidebar,
+  Footer
+  
 }
 from './components';
 

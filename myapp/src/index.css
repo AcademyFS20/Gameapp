@@ -52,7 +52,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100%;
+    
   }
 
   html{
@@ -64,7 +64,7 @@
   .navbar{
       display: flex;
       justify-content: left;
-      height: 20%;
+      height: 100px;
       align-items: center;
       gap: 100px;
       background-color: #d2c4ae;
@@ -85,10 +85,8 @@
     background-color: #d2c4ae;;
 
 }
-.sidebar{
-    display: none;
-    background-color: #d2c4ae;
-}
+
+
   .navlist{
       display: flex;
       flex-direction: row;
@@ -99,7 +97,7 @@
       
   }
  
-  .home{
+  /* .home{
      
   }
   .about{
@@ -110,12 +108,9 @@
   }
   .person{
       
-  }
+  } */
 
-  .footer{
-      height: 100px;
-      border: black;
-  }
+  
  
   ul{
       list-style: none;
@@ -126,8 +121,28 @@
       color: #6f553f;
       font-weight: bold;
   }
-
+  .navsecond{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+  #nanatsu{
+      width: 250px;
+      height: 350px
+  }
   
+
+
+
+  .footer{
+    height: 100px;
+    border: black;
+    
+    left:0;
+    bottom:0;
+    right:0;
+    float: left;
+}
   @media screen and (min-width: 426px) and (max-width: 1023px){
 
   }
@@ -146,10 +161,24 @@
     .sidebar{
         display: flex;
         flex-direction: column;
-        
+        z-index: 1;
         font-size: 20px;
         width: 100%;
+        background-color: #d2c4ae;
+        height:100vh;
         
       
+    }
+
+    .show {
+        display:block;
+    }
+    
+    .hide{
+    
+        display:none;
+    }
+    .discover{
+        display: none;
     }
   }

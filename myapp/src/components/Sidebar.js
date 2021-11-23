@@ -1,15 +1,19 @@
 import React, {useState} from 'react';
 import {navLinks} from '../utils/constants';
 import {Link} from 'react-router-dom';
-import {CgMenuRight} from 'react-icons/cg';
-function Sidebar() {
-  const [sidebar,setSidebar]=useState(false);
-  const handleToggle=()=>setSidebar(!sidebar);
+import {AiOutlineCloseCircle} from 'react-icons/ai';
+import { useAppContext } from '../context/app_context';
+
+const Sidebar=() =>{
+//   const [sidebar,setSidebar]=useState(false);
+//   const handleToggle=()=>setSidebar(!sidebar);
+const {isSidebarOpen,CloseSidebar}=useAppContext();
     return (
         
-        <div className="container">
-            <button className="burger" onClick={handleToggle}><CgMenuRight/></button>
-            {sidebar && <div className="sidebar">
+        <aside className="container">
+            
+           <div className={`sidebar ${isSidebarOpen ? 'show' : 'hide'}`}>
+            <button className="burger" onClick={CloseSidebar}><AiOutlineCloseCircle/></button>
             <ul >
             {
                     navLinks.map((item)=>{
@@ -27,8 +31,8 @@ function Sidebar() {
             </ul>
             
             
-        </div>}
         </div>
+        </aside>
     );
 }
 
