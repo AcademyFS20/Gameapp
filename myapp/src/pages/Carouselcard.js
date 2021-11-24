@@ -22,10 +22,6 @@ class Carouselcard extends Component {
       
     ]
   }
-  
- 
-
-
   render () {
     const { items } = this.state;
     return (
