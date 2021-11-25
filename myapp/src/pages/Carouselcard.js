@@ -8,16 +8,16 @@ class Carouselcard extends Component {
   state = {
     items: [
       {id: 1, 
-      title: "Player",
-      subTitle: "Brave girl",
+      title: "Tsukiyama",
+      subTitle: "C-Rank Hunter",
       img: player1},
 
       {id: 2, 
-        title: "Player",
-        subTitle:"Courageous",
+        title: "Night Owl",
+        subTitle:"C-Rank Hunter",
         img: player2},
-      {id: 3, title: "Player",
-      subTitle: "Knight",
+      {id: 3, title: "Killer Bee",
+      subTitle: "C-Rank Hunter",
       img: player3},
       
     ]
@@ -25,9 +25,9 @@ class Carouselcard extends Component {
   render () {
     const { items } = this.state;
     return (
-      <Carousel>
+      <Carousel >
         {items.map(item => <div key={item.id}> <img src={item.img}/>
-                                <h3>{item.title}</h3>
+                                <h3 className="playername">{item.title}</h3>
                                 <p>{item.subTitle}</p></div>)}
       </Carousel>
     )

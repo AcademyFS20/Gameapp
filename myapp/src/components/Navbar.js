@@ -10,7 +10,7 @@ function Navbar() {
     return (
         <header>
         <nav className="navbar">
-            <h2>Navbar PAGE</h2>
+            <h2 className="titlesite">Heonja Play</h2>
             <ul className="navlist">
                 {
                     navLinks.map((item)=>{
@@ -26,9 +26,9 @@ function Navbar() {
         </nav>
         <div className="navsecond">
         <div className="discover">
-            <h3>Discover More</h3>
-            <p>We released a new character, check it out!</p>
-            <button>Discover</button>
+            <h3 className="discover">Discover More</h3>
+            <p id='para'>We released a new character, check it out!</p>
+            <button className='btn_discover'>Discover</button>
         </div>
         <img src={File03} alt="character" id="nanatsu"/>
         </div>

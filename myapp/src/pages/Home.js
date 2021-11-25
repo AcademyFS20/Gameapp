@@ -12,10 +12,11 @@ import {GiFlail} from 'react-icons/gi';
 function Home() {
     return (
         <article className="home">
-            <section>
-                <h3>Our custom players</h3>
+            <section class="players_section">
+                <h3 className="player_title">Our customized players</h3>
+                <hr/>
                
-                <div className="cards">
+                <div className="carouselcards">
                     <Carouselcard/>
                     {/* {players.map((item, index)=>{
                         return(
@@ -31,26 +32,48 @@ function Home() {
                 
                 </div>
             </section>
-            <section> 
-                <div>
-                    <h3>Custom art only for you</h3>
+            <section className="customcard"> 
+                <div className="description">
+                    <h3 className='titlecustom'>Customized weapons only for you</h3>
                     <p>lorem ipsum</p>
                 </div>
-                <div>
-                {customized.map(item => <div key={item.id}> <i class={item.icon}/>
+                <div className="cards">
+                {/* {customized.map(item => <div className="card" key={item.id}> <i class={item.icon}/>
                                 <h3>{item.title}</h3>
-                                <p>{item.text}</p></div>)}
+                                <p>{item.text}</p></div>)} */}
+                    <div className="card">
+                        <i id="icons"><GiAncientSword/></i>
+                        <h3 className="weapon">Sword</h3>
+                        <p>lorem</p>
+                    </div>
+                    <div className="card">
+                    <i id="icons"><GiArcher/></i>
+                        <h3 className="weapon">Arch</h3>
+                        <p>lorem</p>
+                    </div>
+                    <div className="card">
+                    <i id="icons"><GiSharpAxe/></i>
+                        <h3 className="weapon">Axe</h3>
+                        <p>lorem</p>
+                    </div>
+                    <div className="card">
+                    <i id="icons"><GiFlail/></i>
+                        <h3 className="weapon">Flail</h3>
+                        <p>lorem</p>
+                    </div>
+
+                                
                 </div>
                 </section>
-            <section>
-                <di>
-                    <h2>Join us and receive more tips</h2>
+            <section className="newsletter">
+                <div className="info">
+                    <h2 className="join">Join us and receive more tips</h2>
                     <p>lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsum</p>
 
-                </di>
-                <div>
-                    <input type='text' placeholder="Enter Email Address"/>
-                    <button>Send</button>
+                </div>
+                <div className="email">
+                    <input type='text' placeholder="Enter Email Address" className="emailinput"/>
+                    <button className="send">Send</button>
                 </div>
 
             </section>

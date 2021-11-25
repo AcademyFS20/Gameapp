@@ -3,32 +3,40 @@ import React from 'react';
 function Footer() {
     return (
         <footer className="footer">
-            <h2>Heonja Play</h2>
-            <div>
-            <div>
-                <h1>About Us</h1>
-                <h3>Who we are</h3>
-                <h3>Objectives</h3>
+            <h1 className="foottitle">Heonja Play</h1>
+            <div className="footcontent">
+            <div className="sectioncontent">
+                <h2 className="titlesfooter">About Us</h2>
+                <div className="contain">
+                <h3 className="sub">Who we are</h3>
+                <h3 className="sub">Objectives</h3>
                 <h3></h3>
+                </div>
             </div>
-            <div>
-                <h1>Services</h1>
-                <h3>Internships</h3>
-                <h3>Volunteering</h3>
-                <h3>Job Offers</h3>
+            <div className="sectioncontent">
+                <h2 className="titlesfooter">Services</h2>
+                <div className="contain">
+                <h3 className="sub">Internships</h3>
+                <h3 className="sub">Volunteering</h3>
+                <h3 className="sub">Job Offers</h3>
+                </div>
             </div>
-            <div>
-                <h1>Contact Us</h1>
-                <h3>Issues</h3>
-                <h3>Help us improve our work</h3>
+            <div className="sectioncontent">
+                <h2 className="titlesfooter">Contact Us</h2>
+                <div className="contain">
+                <h3 className="sub">Issues</h3>
+                <h3 className="sub">Help us improve our work</h3>
+                </div>
             </div>
-            <div>
-                <h1>Find us on:</h1>
-                <h3>Facebook</h3>
-                <h3>Instagram</h3>
-                <h3>Discord</h3>
-                <h3>Youtube</h3>
-                <h3>Twitter</h3>
+            <div className="sectioncontent">
+                <h2 className="titlesfooter">Find us on:</h2>
+                <div className="contain">
+                <h3 className="sub">Facebook</h3>
+                <h3 className="sub">Instagram</h3>
+                <h3 className="sub">Discord</h3>
+                <h3 className="sub">Youtube</h3>
+                <h3 className="sub">Twitter</h3>
+                </div>
 
             </div>
             </div>
