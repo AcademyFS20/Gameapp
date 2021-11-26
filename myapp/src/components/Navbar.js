@@ -14,18 +14,18 @@ function Navbar() {
             <ul className="navlist">
                 {
                     navLinks.map((item)=>{
-                        return(<li key={item.id}>
+                        return(<div className='border'><li className="linkat" key={item.id}>
                             <Link to= {item.url} className="links">
                                 {item.text}
                             </Link>
-                            </li>)
+                            </li> </div>)
                     })
                 }
             </ul>
-            <button className="burger" onClick={OpenSidebar}><CgMenuRight/></button>
+            <button className="burger" onClick={OpenSidebar}><CgMenuRight id="menu"/></button>
         </nav>
         <div className="navsecond">
-        <div className="discover">
+        <div className="discovermore">
             <h3 className="discover">Discover More</h3>
             <p id='para'>We released a new character, check it out!</p>
             <button className='btn_discover'>Discover</button>

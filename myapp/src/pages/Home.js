@@ -15,6 +15,7 @@ function Home() {
             <section class="players_section">
                 <h3 className="player_title">Our customized players</h3>
                 <hr/>
+                <hr className="style"/>
                
                 <div className="carouselcards">
                     <Carouselcard/>
@@ -68,12 +69,12 @@ function Home() {
             <section className="newsletter">
                 <div className="info">
                     <h2 className="join">Join us and receive more tips</h2>
-                    <p>lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsum</p>
+                    <p className="information">lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsum</p>
 
                 </div>
                 <div className="email">
                     <input type='text' placeholder="Enter Email Address" className="emailinput"/>
-                    <button className="send">Send</button>
+                    <button className="send" id='btns'>Send</button>
                 </div>
 
             </section>
