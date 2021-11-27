@@ -9,13 +9,17 @@ import {GiArcher} from 'react-icons/gi';
 import {GiSharpAxe} from 'react-icons/gi';
 import {GiFlail} from 'react-icons/gi';
 
+
 function Home() {
     return (
         <article className="home">
+            
             <section class="players_section">
+            
                 <h3 className="player_title">Our customized players</h3>
                 <hr/>
-                <hr className="style"/>
+                
+                
                
                 <div className="carouselcards">
                     <Carouselcard/>

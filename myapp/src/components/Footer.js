@@ -1,8 +1,10 @@
 import React from 'react';
 
+
 function Footer() {
     return (
         <footer className="footer">
+            
             <h1 className="foottitle">Heonja Play</h1>
             <div className="footcontent">
             <div className="sectioncontent">

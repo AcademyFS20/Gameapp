@@ -4,11 +4,13 @@ import {navLinks} from '../utils/constants';
 import {Link} from 'react-router-dom';
 import {useAppContext} from '../context/app_context';
 import {CgMenuRight} from 'react-icons/cg';
-import File03 from '../assets/File03.png';
+import charactersano from '../assets/charactersano.png';
+
+
 function Navbar() {
     const {OpenSidebar} = useAppContext();
     return (
-        <header>
+        <header className="whole">
         <nav className="navbar">
             <h2 className="titlesite">Heonja Play</h2>
             <ul className="navlist">
@@ -30,8 +32,9 @@ function Navbar() {
             <p id='para'>We released a new character, check it out!</p>
             <button className='btn_discover'>Discover</button>
         </div>
-        <img src={File03} alt="character" id="nanatsu"/>
+        <img src={charactersano} alt="character" id="nanatsu"/>
         </div>
+        
         </header>
     );
 }
