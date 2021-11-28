@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 import {useAppContext} from '../context/app_context';
 import {CgMenuRight} from 'react-icons/cg';
 import charactersano from '../assets/charactersano.png';
+import linevintage from '../assets/linevintage.png';
 
 
 function Navbar() {
@@ -12,7 +13,7 @@ function Navbar() {
     return (
         <header className="whole">
         <nav className="navbar">
-            <h2 className="titlesite">Heonja Play</h2>
+            <h2 className="titlesite">Royal Hunt</h2>
             <ul className="navlist">
                 {
                     navLinks.map((item)=>{
@@ -34,6 +35,7 @@ function Navbar() {
         </div>
         <img src={charactersano} alt="character" id="nanatsu"/>
         </div>
+        <img src={linevintage} className="vintage"/>
         
         </header>
     );

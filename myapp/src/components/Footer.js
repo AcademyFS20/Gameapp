@@ -1,11 +1,12 @@
 import React from 'react';
-
+import linevintage from '../assets/linevintage.png';
 
 function Footer() {
     return (
         <footer className="footer">
+            <img src={linevintage} className="vintage"/>
             
-            <h1 className="foottitle">Heonja Play</h1>
+            <h1 className="foottitle">Royal Hunt</h1>
             <div className="footcontent">
             <div className="sectioncontent">
                 <h2 className="titlesfooter">About Us</h2>
