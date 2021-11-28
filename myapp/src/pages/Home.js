@@ -47,24 +47,32 @@ function Home() {
                                 <h3>{item.title}</h3>
                                 <p>{item.text}</p></div>)} */}
                     <div className="card">
+                        <div className='iconedit'>
                         <i id="icons"><GiAncientSword/></i>
+                        </div>
                         <h3 className="weapon">Sword</h3>
-                        <p>lorem</p>
+                        <p>lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsum</p>
                     </div>
                     <div className="card">
+                        <div className='iconedit'>
                     <i id="icons"><GiArcher/></i>
+                    </div>
                         <h3 className="weapon">Arch</h3>
-                        <p>lorem</p>
+                        <p>lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsum</p>
                     </div>
                     <div className="card">
+                        <div className='iconedit'>
                     <i id="icons"><GiSharpAxe/></i>
+                    </div>
                         <h3 className="weapon">Axe</h3>
-                        <p>lorem</p>
+                        <p>lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsum</p>
                     </div>
                     <div className="card">
+                        <div className='iconedit'>
                     <i id="icons"><GiFlail/></i>
+                    </div>
                         <h3 className="weapon">Flail</h3>
-                        <p>lorem</p>
+                        <p>lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsum</p>
                     </div>
 
                                 
